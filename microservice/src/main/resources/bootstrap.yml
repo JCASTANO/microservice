@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: microservice
+  cloud:
+    config:
+      failFast: false
+      uri: http://config-server:8888
+      

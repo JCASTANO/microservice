@@ -1,0 +1,25 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.5.RELEASE")
+    }
+}
+
+allprojects {
+
+	repositories {
+		mavenCentral()		
+	}
+	
+	project.ext.springbootstarterparent = ['org.springframework.boot:spring-boot-starter-parent:1.4.3.RELEASE']
+	project.ext.springclouddependencie = ['org.springframework.cloud:spring-cloud-dependencies:Brixton.SR7']
+	project.ext.springbootstarterundertow = ['org.springframework.boot:spring-boot-starter-undertow:1.4.3.RELEASE']
+	project.ext.springbootstarteractuator = ['org.springframework.boot:spring-boot-starter-actuator:1.4.3.RELEASE']
+	project.ext.springfoxswaggerui = ['io.springfox:springfox-swagger-ui:2.6.1']
+	project.ext.springfoxswagger2 = ['io.springfox:springfox-swagger2:2.6.1']
+	project.ext.springcloudstarterconfig = ['org.springframework.cloud:spring-cloud-starter-config:1.2.2.RELEASE']
+	project.ext.springcloudstartereureka = ['org.springframework.cloud:spring-cloud-starter-eureka:1.2.2.RELEASE']
+	project.ext.springbootstartertest = ['org.springframework.boot:spring-boot-starter-test:1.4.3.RELEASE']
+}
