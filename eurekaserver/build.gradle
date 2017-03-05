@@ -1,0 +1,41 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'spring-boot'
+apply plugin: 'jacoco'
+
+version = '1.0'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+	
+	compile project.ext.springbootstarterparent
+	
+	compile project.ext.springclouddependencie
+	
+	compile project.ext.springbootstarterundertow
+	
+	compile project.ext.springcloudstarterconfig
+	
+	compile project.ext.springcloudstartereurekaserver
+	
+	compile project.ext.springbootstarteractuator
+}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'eureka-server',
+                   'Implementation-Version': version
+    }
+}
+
+test {
+	jacoco {
+		append = false
+		destinationFile = file("jacoco/jacocoTest.exec")
+	}
+	reports.junitXml.destination =  file("jacoco/test-results")
+}
+
+jacocoTestReport.dependsOn(test)
+jar.dependsOn(jacocoTestReport)

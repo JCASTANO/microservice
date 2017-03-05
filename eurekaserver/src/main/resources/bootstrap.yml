@@ -1,6 +1,6 @@
 spring:
   application:
-    name: microservice
+    name: eurekaserver
   cloud:
     config:
       failFast: true

@@ -27,6 +27,7 @@ allprojects {
 	project.ext.springcloudconfigserver = ['org.springframework.cloud:spring-cloud-config-server:1.2.2.RELEASE']
 	project.ext.springcloudstarterconfig = ['org.springframework.cloud:spring-cloud-starter-config:1.2.2.RELEASE']
 	
+	project.ext.springcloudstartereurekaserver = ['org.springframework.cloud:spring-cloud-starter-eureka-server:1.2.2.RELEASE']
 	project.ext.springcloudstartereureka = ['org.springframework.cloud:spring-cloud-starter-eureka:1.2.2.RELEASE']
 	
 	project.ext.springbootstartertest = ['org.springframework.boot:spring-boot-starter-test:1.4.3.RELEASE']
