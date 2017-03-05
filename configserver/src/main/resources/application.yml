@@ -19,5 +19,4 @@ spring:
     config:
       server:
         native:
-          searchLocations:D:/microservicios/referenceArchitecture/config
-          
+          searchLocations:D:/microservicios/referenceArchitecture/config    

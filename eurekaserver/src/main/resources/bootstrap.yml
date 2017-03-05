@@ -3,6 +3,6 @@ spring:
     name: eurekaserver
   cloud:
     config:
-      failFast: true
+      failFast: false
       uri: http://localhost:8888
       
