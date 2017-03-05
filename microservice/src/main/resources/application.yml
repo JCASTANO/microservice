@@ -1,6 +1,11 @@
 # HTTP Server
 server:  
-  port: 0   # HTTP port
+  port: 3333   # HTTP port
+
+# Spring properties
+spring:  
+  application:
+    name: microservice
 
 # Discovery Server Access
 eureka:  

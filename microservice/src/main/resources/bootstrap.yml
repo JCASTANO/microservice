@@ -3,6 +3,6 @@ spring:
     name: microservice
   cloud:
     config:
-      failFast: false
+      failFast: true
       uri: http://localhost:8888
       

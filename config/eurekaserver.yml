@@ -1,5 +1,5 @@
 server:
-  port: ${EUREKA_SERVER_PORT:1111}   # HTTP port
+  port: 1111   # HTTP port
   
 logging:
   file: logs/${spring.application.name}.log
