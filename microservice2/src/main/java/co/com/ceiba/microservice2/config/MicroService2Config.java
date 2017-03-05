@@ -5,15 +5,15 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
-import co.com.ceiba.microservice2.service.HelloClient;
+import co.com.ceiba.microservice2.service.MicroServiceClient;
 
 @Configuration
 public class MicroService2Config {
 
 	@Bean 
-	public HelloClient sadrClient(){
+	public MicroServiceClient sadrClient(){
 		
-		return new HelloClient();
+		return new MicroServiceClient();
 	}
 	
 	@Bean

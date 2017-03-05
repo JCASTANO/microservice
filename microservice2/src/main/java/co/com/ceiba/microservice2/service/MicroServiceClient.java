@@ -9,11 +9,11 @@ import org.springframework.web.client.RestTemplate;
 import co.com.ceiba.microservice2.model.Greeting;
 
 @Service
-public class HelloClient {
+public class MicroServiceClient {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(HelloClient.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(MicroServiceClient.class);
 	
-	public static final String HELLO_URL = "http://SADR-SERVICE/hello/greet";
+	public static final String HELLO_URL = "http://SADR-SERVICE/microservice/greet";
 	
 	@Autowired
 	private RestTemplate restTemplate;
@@ -24,6 +24,5 @@ public class HelloClient {
 		LOGGER.debug("--> value: {}", greeting.getValue());
 		
 		return restTemplate.postForObject(HELLO_URL, greeting, Greeting.class);
-	}
-	
+	}	
 }
