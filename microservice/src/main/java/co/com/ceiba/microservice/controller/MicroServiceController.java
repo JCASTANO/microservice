@@ -11,24 +11,18 @@ import co.com.ceiba.microservice.model.Greeting;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
 
 @Api
 @RestController
-@RequestMapping("hello/")
-public class HelloController {
+@RequestMapping("microservice/")
+public class MicroServiceController {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(HelloController.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(MicroServiceController.class);
 
 	@RequestMapping(method = RequestMethod.POST, value = "greet/")
 	@ApiOperation(value = "greet", nickname = "greet", response = Greeting.class)
-	@ApiResponses(value = { @ApiResponse(code = 200, message = "Success", response = String.class),
-			@ApiResponse(code = 201, message = "Created"), @ApiResponse(code = 400, message = "Bad Request"),
-			@ApiResponse(code = 401, message = "Unauthorized"), @ApiResponse(code = 403, message = "Forbidden"),
-			@ApiResponse(code = 404, message = "Not Found"), @ApiResponse(code = 500, message = "Failure") })
-	public Greeting ping(
-			@ApiParam(value = "greeting", required = true) @RequestBody(required = true) Greeting greeting) {
+	public Greeting greet(@ApiParam(value = "greeting", required = true) 
+						  @RequestBody(required = true) Greeting greeting) {
 
 		LOGGER.debug("--> greet received");
 		LOGGER.debug("--> value: {}", greeting.getValue());

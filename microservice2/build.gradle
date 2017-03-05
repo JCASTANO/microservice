@@ -1,0 +1,46 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'spring-boot'
+apply plugin: 'jacoco'
+
+version = '1.0'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+	
+	compile project.ext.springbootstarterparent
+	
+	compile project.ext.springclouddependencie
+	
+	compile project.ext.springbootstarterundertow
+	
+	compile project.ext.springcloudstarterconfig
+	
+	compile project.ext.springcloudstartereureka
+	
+	compile project.ext.springfoxswaggerui
+	compile project.ext.springfoxswagger2
+	
+	compile project.ext.springbootstarteractuator
+	
+	testCompile project.ext.springbootstartertest
+}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'microservice2',
+                   'Implementation-Version': version
+    }
+}
+
+test {
+	jacoco {
+		append = false
+		destinationFile = file("jacoco/jacocoTest.exec")
+	}
+	reports.junitXml.destination =  file("jacoco/test-results")
+}
+
+jacocoTestReport.dependsOn(test)
+jar.dependsOn(jacocoTestReport)

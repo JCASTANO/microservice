@@ -1,1 +1,1 @@
-include "microservice","configserver","eurekaserver"
+include "microservice","microservice2","configserver","eurekaserver"
