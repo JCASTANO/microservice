@@ -13,14 +13,9 @@ dependencies {
 	
 	compile project.ext.springclouddependencie
 	
+	compile project.ext.springcloudconfigserver
+	
 	compile project.ext.springbootstarterundertow
-	
-	compile project.ext.springcloudstarterconfig
-	
-	compile project.ext.springcloudstartereureka
-	
-	compile project.ext.springfoxswaggerui
-	compile project.ext.springfoxswagger2
 	
 	compile project.ext.springbootstarteractuator
 	
@@ -29,7 +24,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'microservice',
+        attributes 'Implementation-Title': 'configserver',
                    'Implementation-Version': version
     }
 }

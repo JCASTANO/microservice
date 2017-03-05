@@ -1,0 +1,23 @@
+server:
+  port: 8888
+  
+logging:
+  file: logs/${spring.application.name}.log
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+    co.com.ceiba: 'DEBUG'
+    
+    
+spring:
+  profiles:
+    active: native
+
+  application:
+    name: configserver  # Service registers under this name
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations:D:/microservicios/referenceArchitecture/config
+          
