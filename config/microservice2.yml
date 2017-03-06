@@ -1,6 +1,6 @@
 # HTTP Server
 server:
-  port: 2222   # HTTP port
+  port: ${PORT:2222}   # HTTP port
 
 # Discovery Server Access
 eureka:

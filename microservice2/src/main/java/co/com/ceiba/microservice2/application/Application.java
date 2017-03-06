@@ -9,8 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableDiscoveryClient
 @ComponentScan(basePackages = {
 		"co.com.ceiba.microservice2.config",
-		"co.com.ceiba.microservice2.controller",
-		"co.com.ceiba.microservice2.service"
+		"co.com.ceiba.microservice2.controller"
 })
 public class Application {
 	
