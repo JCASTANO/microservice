@@ -14,22 +14,22 @@ allprojects {
 	}
 	
 	project.ext.springbootstarterparent = ['org.springframework.boot:spring-boot-starter-parent:1.4.3.RELEASE']
-	
-	project.ext.springclouddependencie = ['org.springframework.cloud:spring-cloud-dependencies:Brixton.SR7']
-	
+	project.ext.springbootstarter = ['org.springframework.boot:spring-boot-starter:1.4.3.RELEASE']
 	project.ext.springbootstarterundertow = ['org.springframework.boot:spring-boot-starter-undertow:1.4.3.RELEASE']
-	
 	project.ext.springbootstarteractuator = ['org.springframework.boot:spring-boot-starter-actuator:1.4.3.RELEASE']
 	
 	project.ext.springfoxswaggerui = ['io.springfox:springfox-swagger-ui:2.6.1']
 	project.ext.springfoxswagger2 = ['io.springfox:springfox-swagger2:2.6.1']
 	
+	project.ext.springclouddependencie = ['org.springframework.cloud:spring-cloud-dependencies:Brixton.SR7']
 	project.ext.springcloudconfigserver = ['org.springframework.cloud:spring-cloud-config-server:1.2.2.RELEASE']
 	project.ext.springcloudstarterconfig = ['org.springframework.cloud:spring-cloud-starter-config:1.2.2.RELEASE']
 	project.ext.springcloudstarterhystrix = ['org.springframework.cloud:spring-cloud-starter-hystrix:1.2.2.RELEASE']
-	
 	project.ext.springcloudstartereurekaserver = ['org.springframework.cloud:spring-cloud-starter-eureka-server:1.2.2.RELEASE']
 	project.ext.springcloudstartereureka = ['org.springframework.cloud:spring-cloud-starter-eureka:1.2.2.RELEASE']
 	
 	project.ext.springbootstartertest = ['org.springframework.boot:spring-boot-starter-test:1.4.3.RELEASE']
+	
+	project.ext.springbootadminserver = ['de.codecentric:spring-boot-admin-server:1.3.7']
+	project.ext.springbootadminserverui = ['de.codecentric:spring-boot-admin-server-ui:1.3.7']
 }

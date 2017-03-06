@@ -10,14 +10,11 @@ targetCompatibility = 1.8
 dependencies {
 	
 	compile project.ext.springbootstarterparent
+	compile project.ext.springbootstarterundertow
+	compile project.ext.springbootstarteractuator
 	
 	compile project.ext.springclouddependencie
-	
 	compile project.ext.springcloudconfigserver
-	
-	compile project.ext.springbootstarterundertow
-	
-	compile project.ext.springbootstarteractuator
 	
 	testCompile project.ext.springbootstartertest
 }

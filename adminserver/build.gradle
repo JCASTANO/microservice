@@ -10,17 +10,19 @@ targetCompatibility = 1.8
 dependencies {
 	
 	compile project.ext.springbootstarterparent
-	compile project.ext.springbootstarterundertow
-	compile project.ext.springbootstarteractuator
+	compile project.ext.springbootstarter
 	
 	compile project.ext.springclouddependencie
 	compile project.ext.springcloudstarterconfig
-	compile project.ext.springcloudstartereurekaserver
+	compile project.ext.springcloudstartereureka
+	
+	compile project.ext.springbootadminserver
+	compile project.ext.springbootadminserverui
 }
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'eureka-server',
+        attributes 'Implementation-Title': 'adminServer',
                    'Implementation-Version': version
     }
 }
