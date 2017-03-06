@@ -1,6 +1,6 @@
 # HTTP Server
 server:
-  port: 3333   # HTTP port
+  port: 0   # HTTP port
 
 # Discovery Server Access
 eureka:

@@ -11,7 +11,7 @@ import co.com.ceiba.microservice2.service.MicroServiceClient;
 public class MicroService2Config {
 
 	@Bean 
-	public MicroServiceClient sadrClient(){
+	public MicroServiceClient microServiceClient(){
 		
 		return new MicroServiceClient();
 	}

@@ -8,6 +8,10 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:1111/eureka/
 
+microservice:
+  name: microservice
+  pingUrl: http://${microservice.name}/microservice/greet/
+
 logging:
   file: logs/${spring.application.name}.log
   level:
