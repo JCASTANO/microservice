@@ -11,6 +11,7 @@ dependencies {
 	
 	compile project.ext.springbootstarterparent
 	compile project.ext.springbootstarter
+	compile project.ext.springbootstarteractuator
 	
 	compile project.ext.springclouddependencie
 	compile project.ext.springcloudstarterconfig
